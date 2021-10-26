@@ -30,7 +30,7 @@ int main()
 		}
 		else
 		{
-			std::cout<<"ERROR: Acceptable values are only 'Y', 'y', 'N'or 'n'"<<std::endl;
+			std::cout<<"ERROR: Acceptable values are only 'Y', 'y', 'N'or 'n'"<<std::endl
 		}
 	}
 }
