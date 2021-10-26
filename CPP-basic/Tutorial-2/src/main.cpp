@@ -16,6 +16,6 @@ int main()
 	fAnswer = (iAverage[0] + iAverage[1] + iAverage[2] + iAverage[3] + iAverage[4]) / 5;
 
 	std::cout << std::endl;
-	std::cout << "The average of the numbers " << iAverage[0] << ", " << iAverage[1] << ", " << iAverage[2] << ", " << iAverage[3] << " and " << iAverage[4] << " is " << fAnswer << std::endl
+	std::cout << "The average of the numbers " << iAverage[0] << ", " << iAverage[1] << ", " << iAverage[2] << ", " << iAverage[3] << " and " << iAverage[4] << " is " << fAnswer << std::endl;
 	return 0;
 }
