@@ -11,7 +11,7 @@ Student::~Student()
 
 }
 
-Student::iIDChange(int id)
+Student::iChangeID(int id)
 {
 	this.iID = id;
 }

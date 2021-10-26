@@ -10,9 +10,10 @@ private:
 	int iID;
 	std::string strName;
 
+public:
 	Student();
 	~Student();
 
-	void iIDChange(int id);
+	void iChangeID(int id);
 	void strNameChange(std::string name);
 }
