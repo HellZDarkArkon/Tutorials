@@ -1,10 +1,10 @@
-#include "\..\header\grade.h"
+#include "../header/grade.h"
 
-Grade::Grade()
+Grade::Grade(Student std, Course crs)
 {
-	iStudentID = 0;
-	iCourseID = 0;
-	cGrade = ' ';
+	this->iStudentID = std.iGetStudentID();
+	this->iCourseID = crs.iGetCourseID();
+	this->cGrade = ' ';
 }
 
 Grade::~Grade()
@@ -12,17 +12,32 @@ Grade::~Grade()
 
 }
 
-int Grade::iStudentIDChange(int id)
+void Grade::iCourseIDChange(int id)
 {
-	this.iStudentID = id;
+	this->iCourseID = id;
 }
 
-int Grade::iCourseIDChange(int id)
+void Grade::iStudentIDChange(int id)
 {
-	this.iCourseID = id;
+	this->iStudentID = id;
 }
 
-char Grade::chrGradeChange(char grade)
+void Grade::chrGradeChange(char grade)
 {
-	this.cGrade = grade;
+	this->cGrade = grade;
+}
+
+int Grade::iGetCourseID()
+{
+	return this->iCourseID;
+}
+
+int Grade::iGetStudentID()
+{
+	return this->iStudentID;
+}
+
+char Grade::chrGetGrade()
+{
+	return this->cGrade;
 }

@@ -1,10 +1,10 @@
-#include "\..\header\course.h"
+#include "../header/course.h"
 
 Course::Course()
 {
-	this.iID = 0;
-	this.strName = " ";
-	this.iCredits = 0;
+	this->iCourseID = 0;
+	this->strName = " ";
+	this->iCredits = 0;
 }
 
 Course::~Course()
@@ -12,17 +12,32 @@ Course::~Course()
 
 }
 
-int Course::iChangeID(int id)
+void Course::iChangeCourseID(int id)
 {
-	this.iID = id;
+	this->iCourseID = id;
 }
 
-int8_t Course::iChangeCredits(int8_t credits)
+void Course::iChangeCredits(int8_t credits)
 {
-	this.iCredits = credits;
+	this->iCredits = credits;
 }
 
-std::string strNameChange(std::string name)
+void Course::strNameChange(std::string name)
 {
-	this.strName = name;
+	this->strName = name;
+}
+
+int Course::iGetCourseID()
+{
+	return this->iCourseID;
+}
+
+int8_t Course::iGetCredits()
+{
+	return this->iCredits;
+}
+
+std::string Course::strGetName()
+{
+	return this->strName;
 }

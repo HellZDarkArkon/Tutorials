@@ -1,9 +1,9 @@
-#include "\..\header\student.h"
+#include "../header/student.h"
 
 Student::Student()
 {
-	iID = 0;
-	strName = " ";
+	this->iStudentID = 0;
+	this->strName = " ";
 }
 
 Student::~Student()
@@ -11,12 +11,22 @@ Student::~Student()
 
 }
 
-Student::iChangeID(int id)
+void Student::iChangeID(int id)
 {
-	this.iID = id;
+	this->iStudentID = id;
 }
 
-Student::strNameChange(std::string name)
+void Student::strNameChange(std::string name)
 {
-	this.strName = name;
+	this->strName = name;
+}
+
+int Student::iGetStudentID()
+{
+	return this->iStudentID;
+}
+
+std::string Student::strGetName()
+{
+	return this->strName;
 }

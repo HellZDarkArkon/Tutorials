@@ -7,7 +7,7 @@
 class Student
 {
 private:
-	int iID;
+	int iStudentID;
 	std::string strName;
 
 public:
@@ -16,4 +16,9 @@ public:
 
 	void iChangeID(int id);
 	void strNameChange(std::string name);
-}
+
+	int iGetStudentID();
+	std::string strGetName();
+};
+
+#endif
